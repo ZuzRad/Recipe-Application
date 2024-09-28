@@ -1,1 +1,21 @@
-<p>form works!</p>
+<mat-card>
+    <mat-card-title>Dodaj nowy przepis</mat-card-title>
+    <mat-card-content>
+      <form>
+        <mat-form-field>
+          <mat-label>Tytuł</mat-label>
+          <input matInput [(ngModel)]="newRecipe.title" name="title">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Opis</mat-label>
+          <textarea matInput [(ngModel)]="newRecipe.description" name="description"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Składniki</mat-label>
+          <input matInput [(ngModel)]="newRecipe.ingredients" name="ingredients">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="addRecipe()">Dodaj</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  
