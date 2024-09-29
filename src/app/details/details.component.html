@@ -1,1 +1,11 @@
-<p>details works!</p>
+<mat-card *ngIf="recipe">
+    <mat-card-title>{{ recipe.title }}</mat-card-title>
+    <mat-card-content>
+      <p>{{ recipe.description }}</p>
+      <h3>Składniki:</h3>
+      <ul>
+        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  

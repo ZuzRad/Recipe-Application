@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'], // Upewnij się, że to jest styleUrls
+  styleUrls: ['./app.component.css'], 
 })
 export class AppComponent {
   title = 'Recipe Application';

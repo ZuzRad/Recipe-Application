@@ -7,7 +7,6 @@ import { ListComponent } from './list/list.component';
 import { FormComponent } from './form/form.component';
 import { DetailsComponent } from './details/details.component';
 
-// Import routing module
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -19,8 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, // Routing module import
-    BrowserAnimationsModule, // Required for Angular Material
+    AppRoutingModule,
+    BrowserAnimationsModule, 
   ],
   bootstrap: [AppComponent],
   providers: [],
