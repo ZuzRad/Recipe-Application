@@ -1,0 +1,17 @@
+.centered-card {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+mat-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+mat-card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
