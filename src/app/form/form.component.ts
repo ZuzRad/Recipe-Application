@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
-  newRecipe: Recipe = { id: 0, title: '', description: '', ingredients: [] };
+  newRecipe: Recipe = { id: 0, title: '', details: '' };
 
   constructor(private recipeService: RecipeService, private router: Router) {}
 
