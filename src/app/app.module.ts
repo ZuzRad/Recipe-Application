@@ -38,6 +38,6 @@ import { AppRoutingModule } from './app.routing.module';
     MatButtonModule,
   ],
   bootstrap: [AppComponent],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient()], // Provide HttpClient to fetch data.
 })
 export class AppModule {}
