@@ -17,3 +17,8 @@ mat-card-content {
     align-items: center;
 }
 
+.mat-form-field.error .mat-form-field-wrapper {
+    border-color: red;
+  }
+  
+

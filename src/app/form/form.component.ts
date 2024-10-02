@@ -11,10 +11,19 @@ import { Router } from '@angular/router';
 })
 export class FormComponent {
   newRecipe: Recipe = { id: 0, title: '', details: '' };
+  titleError: boolean = false;
+  detailsError: boolean = false;
 
   constructor(private recipeService: RecipeService, private router: Router) {}
 
   addRecipe() {
+    this.titleError = !this.newRecipe.title;
+    this.detailsError = !this.newRecipe.details;
+
+    if (this.titleError || this.detailsError) {
+      return;
+    }
+    
     this.newRecipe.id = Date.now(); 
     this.recipeService.addRecipe(this.newRecipe);
     this.router.navigate(['/']);
